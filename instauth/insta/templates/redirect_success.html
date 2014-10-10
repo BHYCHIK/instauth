@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>
+Redirect success
+</title>
+</head>
+<body>
+Authed successfully!<br>
+You will be redirected in <span id="seconds_to_redirect">2</span> seconds!
+<script>
+var seconds_to_redirect = document.getElementById("seconds_to_redirect");
+var timeleft = seconds_to_redirect.innerHTML;
+var intervalId= setInterval(function() {
+    timeleft--;
+    seconds_to_redirect.innerHTML = timeleft;
+    if (timeleft == 0) {
+        clearInterval(intervalId);
+        window.location = "/insta/app";
+    }
+},
+1000);
+</script>
+</body>
+</html>

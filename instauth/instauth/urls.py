@@ -8,4 +8,6 @@ urlpatterns = patterns('',
 
     url(r'^admin/', include(admin.site.urls)),
     url(r'^insta/redirect', 'insta.views.redirect_view'),
+    url(r'^insta/app', 'insta.views.app'),
+    url(r'^insta/logout', 'insta.views.logout'),
 )

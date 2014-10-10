@@ -1,0 +1,18 @@
+<html>
+<head>
+<title>
+Your liked images
+</title>
+</head>
+<body>
+<h1>
+You liked this images:
+</h1>
+<a href="/insta/logout"> logout </a>
+{% for image in liked_images %}
+<div>
+<img src="{{image}}">
+<div>
+{%endfor%}
+</body>
+</html>
